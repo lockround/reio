@@ -1,0 +1,48 @@
+{
+  "name": "reio",
+  "version": "0.0.0-semantically-released",
+  "description": "State management in react",
+  "main": "dist/index.js",
+  "engines": {
+    "node": ">=10",
+    "npm": ">=6",
+    "yarn": ">=1"
+  },
+  "scripts": {
+    "build": "kcd-scripts build",
+    "lint": "kcd-scripts lint",
+    "test": "kcd-scripts test",
+    "test:update": "npm test -- --updateSnapshot --coverage",
+    "validate": "kcd-scripts validate",
+    "setup": "npm install && npm run validate -s"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [],
+  "author": "Shubham Tiwari <npm.init.y@gmail.com> (https://lockround.com)",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/runtime": "^7.4.4",
+    "lodash": "^4.17.15"
+  },
+  "devDependencies": {
+    "kcd-scripts": "^1.4.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "kcd-scripts pre-commit"
+    }
+  },
+  "eslintConfig": {
+    "extends": "./node_modules/kcd-scripts/eslint.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lockround/reio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lockround/reio/issues"
+  },
+  "homepage": "https://github.com/lockround/reio#readme"
+}
